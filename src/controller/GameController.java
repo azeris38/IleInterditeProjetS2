@@ -125,24 +125,24 @@ public class GameController implements Observer {
      * @author nihil
      *
      * @param tile
-     */
-    private void shoreUp(Tile tile) {
-        Game g = getCurrentGame();
-        Adventurer adv = g.getCurrentPlayer().getCurrentAdventurer();
-        
-        try {
-            adv.shoreUp(tile);
-            Parameters.printLog("Shore Up " + tile, LogType.INFO);
-            
-            // to update the view
-            gameView.shoreUp(tile.getCoords());
-        } catch (TileException | ActionException e) {
-            e.printStackTrace();
-        } finally {
-            defaultAction();
-        }
-    }
-    
+//     */
+//    private void shoreUp(Tile tile) {
+//        Game g = getCurrentGame();
+//        Adventurer adv = g.getCurrentPlayer().getCurrentAdventurer();
+//        
+//        try {
+//            adv.shoreUp(tile);
+//            Parameters.printLog("Shore Up " + tile, LogType.INFO);
+//            
+//            // to update the view
+//            gameView.shoreUp(tile.getCoords());
+//        } catch (TileException | ActionException e) {
+//            e.printStackTrace();
+//        } finally {
+//            defaultAction();
+//        }
+//    }
+//    
     
     /**
      * @author nihil
